@@ -2,24 +2,33 @@ pipeline {
     agent any
 
     stages {
-        stage('step to to Plan') {
+        stage('step to to Plan')
+        {
             steps {
                 echo 'Plan'
             }
         }
-        stage('Time to do Analysis') {
+     stage{
+         stage('Time to do Analysis') 
+         {
             steps {
                 echo 'Analysis'
+             }
         }
-        stage('step to to Design') {
+      stage{
+           stage ('step to to Design')
+           {
             steps {
                 echo 'Design'
             }
         }
-        stage('step to to Devlop') {
+       stage{
+           stage('step to to Devlop') 
+           {
             steps {
                 echo 'Devlop'
             }
         }
     }
+}
 }
